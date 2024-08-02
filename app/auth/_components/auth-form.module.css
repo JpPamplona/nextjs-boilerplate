@@ -1,0 +1,26 @@
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--border);
+
+  & span {
+    background-color: hsl(var(--card));
+    color: hsl(var(--white));
+    width: 10%;
+  }
+}
+
+.separator::after,
+.separator::before {
+  content: "";
+  flex: 1;
+}
+
+.separator:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 0.25em;
+}
