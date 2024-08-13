@@ -10,6 +10,7 @@ datasource db {
   url      = "file:./dev.db"
 }
 
+// Auth JS tables for authentication purposes
 model User {
   id            String          @id @default(cuid())
   name          String?
